@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="docs/preview.png" alt="SyntaxAI Interface" width="800"/>
+  <img src="docs/preview.png" alt="SyntaxAI Arayüzü" width="800"/>
   
   <h1>SyntaxAI</h1>
-  <p>An interactive, AI-powered coding tutor and IDE built with a modern, sleek aesthetic.</p>
+  <p>Modern ve şık bir tasarıma sahip, yapay zeka destekli interaktif kodlama eğitmeni ve IDE.</p>
 
   <div>
     <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
@@ -14,61 +14,61 @@
 
 ---
 
-## 🌟 Features
+## 🌟 Özellikler
 
-- **Modern & Premium UI**: A sleek dark mode inspired by top-tier developer tools like Vercel and Linear.
-- **Intelligent AI Tutor**: Powered by Google's Gemini (and supports OpenAI / Anthropic). The AI adapts its hints based on your selected difficulty level (Beginner, Intermediate, Advanced).
-- **Per-Language Progress Tracking**: Switch between languages without losing your code. SyntaxAI remembers your task, code, and feedback for each language separately.
-- **VS Code-like Editing Experience**: Integrated Monaco Editor featuring:
-  - Dynamic Emmet support (`.classname`, `#idname`, `!`)
-  - Auto-closing tags and brackets
-  - Boilerplate snippets for Java, C++, C#, Python, Rust, and Go.
-- **API Key Rotation**: Supports multiple API keys. If a key hits rate limits (Quota Exceeded / 429), the server automatically and transparently fails over to the next available key.
-- **Smart Quota Conservation**: Prevents unnecessary API calls if the code hasn't changed.
+- **Modern & Premium Arayüz**: Vercel ve Linear gibi üst düzey geliştirici araçlarından ilham alan şık bir karanlık mod (Dark Mode) tasarımı.
+- **Akıllı Yapay Zeka Eğitmeni**: Google Gemini (ayrıca OpenAI ve Anthropic) tarafından desteklenir. Yapay zeka, seçtiğiniz zorluk seviyesine (Başlangıç, Orta, İleri) göre ipuçlarını dinamik olarak ayarlar.
+- **Dile Özel Gelişim Takibi**: Kodunuzu kaybetmeden diller arasında geçiş yapabilirsiniz. SyntaxAI her dil için ayrı ayrı kodunuzu, görevinizi ve geri bildirimleri hafızasında tutar.
+- **VS Code Benzeri Editör Deneyimi**: Entegre Monaco Editör sayesinde:
+  - Dinamik Emmet desteği (`.sinifadi`, `#idadi`, `!`)
+  - Otomatik kapanan etiketler ve parantezler
+  - Java, C++, C#, Python, Rust ve Go dilleri için otomatik iskelet (boilerplate) kod oluşturma desteği.
+- **Kesintisiz Deneyim (API Key Rotasyonu & Model Fallback)**: Birden fazla API anahtarı ekleyebilirsiniz. Eğer bir anahtar veya seçilen model kota sınırına takılırsa (Quota Exceeded / 429), sunucu otomatik olarak sıradaki anahtara veya daha uygun bir modele (Fallback) geçiş yaparak kesintisiz eğitim sağlar.
+- **Akıllı Kota Tasarrufu**: Eğer kodda hiçbir değişiklik yapılmadıysa gereksiz API çağrılarını engelleyerek API kotalarınızı korur.
 
-## 🚀 Getting Started
+## 🚀 Başlarken
 
-### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- NPM or Yarn
+### 1. Gereksinimler
+- [Node.js](https://nodejs.org/) (v16 veya üzeri)
+- NPM veya Yarn
 
-### 2. Installation
+### 2. Kurulum
 
-Clone the repository and install the dependencies:
+Projeyi bilgisayarınıza klonlayın ve bağımlılıkları yükleyin:
 
 ```bash
-git clone https://github.com/yourusername/SyntaxAI.git
+git clone https://github.com/kullaniciadiniz/SyntaxAI.git
 cd SyntaxAI
 npm install
 ```
 
-### 3. Environment Setup
+### 3. Çevre Değişkenleri (Environment) Ayarları
 
-Rename `.env.example` to `.env` (or create a new `.env` file) and add your API keys. You can add multiple keys for automatic rotation:
+`.env.example` dosyasının adını `.env` olarak değiştirin (veya yeni bir `.env` dosyası oluşturun) ve API anahtarlarınızı ekleyin. Otomatik rotasyon için birden fazla anahtar ekleyebilirsiniz:
 
 ```env
-GEMINI_API_KEY_1=your_first_gemini_key
-GEMINI_API_KEY_2=your_second_gemini_key
-# Optional:
+GEMINI_API_KEY_1=birinci_gemini_anahtariniz
+GEMINI_API_KEY_2=ikinci_gemini_anahtariniz
+# İsteğe Bağlı:
 # OPENAI_API_KEY=
 # ANTHROPIC_API_KEY=
 ```
 
-### 4. Run the App
+### 4. Uygulamayı Başlatma
 
-Start the development server:
+Geliştirme sunucusunu çalıştırın:
 
 ```bash
 npm run dev
 ```
 
-Open your browser and navigate to `http://localhost:3000`.
+Tarayıcınızı açın ve `http://localhost:3000` adresine gidin.
 
-## 🧠 Supported Languages
-JavaScript, Node.js, React, TypeScript, Python, HTML, CSS, Java, C++, C#, Go, and Rust.
+## 🧠 Desteklenen Diller
+JavaScript, Node.js, React, TypeScript, Python, HTML, CSS, Java, C++, C#, Go ve Rust.
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/SyntaxAI/issues).
+## 🤝 Katkıda Bulunma
+Katkılarınız, geri bildirimleriniz ve özellik talepleriniz bizim için değerlidir. Geliştirmeler için [issues (sorunlar) sayfasını](https://github.com/kullaniciadiniz/SyntaxAI/issues) ziyaret edebilirsiniz.
 
-## 📄 License
-This project is [MIT](LICENSE) licensed.
+## 📄 Lisans
+Bu proje [MIT](LICENSE) lisansı altında sunulmaktadır.
